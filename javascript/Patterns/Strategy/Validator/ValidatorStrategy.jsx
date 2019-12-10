@@ -108,14 +108,6 @@ export default class Validator {
      *
      */
     validate = (formData) => {
-        // Log.intention(this.displayName,
-        //     `# Procedura walidacji`,
-        //     `this:`, this,
-        //     `Powinniśmy zwalidować wszystkie contexty wg kolejności dodanej w this.context`,
-        //     this.context,
-        //     `Dane do walidacji:`, formData,
-        // );
-        
         const validationResult = new ResultValidator();
         
         if (this.context.field && this.context.field.strategy) {
