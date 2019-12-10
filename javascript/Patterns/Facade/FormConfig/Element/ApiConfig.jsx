@@ -6,7 +6,7 @@ export default class ApiConfig {
     action = "";
     
     /**
-     * @param {string} action
+     * @param {string} akcja
      */
     constructor(action) {
         this.action = action;

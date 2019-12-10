@@ -39,7 +39,6 @@ export default class FieldConfig {
     }
     
     acceptVisitor = (widgetFactoryCoordinator) => {
-        // widgetFactoryCoordinator.visitField(this);
         widgetFactoryCoordinator.setFieldWidget(this);
     };
     

@@ -35,11 +35,6 @@ export default class FormMaker {
             component: () => {
                 const formBuilder = new FormBuilder(this._form.context);
                 const formDirector = new FormDirector(formBuilder);
-                // Log.warning({
-                //     this:         this,
-                //     formBuilder:  formBuilder,
-                //     formDirector: formDirector,
-                // });
                 this._form.component = formDirector.createForm();
             },
             context: (formName) => {

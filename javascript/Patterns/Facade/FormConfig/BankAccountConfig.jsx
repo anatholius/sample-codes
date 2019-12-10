@@ -78,7 +78,7 @@ export default class BankAccountConfig extends FormConfigInterface {
                         color:  'red',
                         label:  'Usuń',
                         icon:   'fad fa-trash',
-                        action: 'bankAccount',//TODO: tu chyba trzbea machnąć jakiś callback
+                        action: 'bankAccount',//TODO: tu chyba trzeba machnąć jakiś callback
                     },
                 },
                 right: {

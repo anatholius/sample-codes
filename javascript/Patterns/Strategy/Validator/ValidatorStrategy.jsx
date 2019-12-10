@@ -35,7 +35,6 @@ export class ResultValidator {
                 success: this.success,
                 message: this.message,
             };
-            // Log.success(answer);
         } else {
             this.success = false;
             this.message = 'Walidacja zakończyła się porażką!';
@@ -45,7 +44,6 @@ export class ResultValidator {
                 // errors:  Helper.mapToObject(this.errors),
                 message: this.message,
             };
-            // Log.error(answer);
         }
         return answer;
     }

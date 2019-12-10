@@ -35,13 +35,13 @@ export default class ValidationConfig {
         // console.log('ValidationConfig.arguments', arguments);
         for (let rules of arguments) {
             if (rules instanceof FieldsValidationConfig) {
-                //zasady walidacji pól
+                //field validation rules
                 this.fieldsRules = rules;
             } else if (rules instanceof FormValidationConfig) {
-                //zasady walidacji pól w kontekście formularza
+                //field validation rules in the context of the form
                 this.formRules = rules;
             } else if (rules instanceof CollectionValidationConfig) {
-                //zasady walidacji pól w kontekście kolekcji
+                //field validation rules in the context of the collection
                 this.collectionRules = rules;
             }
         }

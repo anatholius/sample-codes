@@ -14,14 +14,12 @@ export default class FormValidationConfig {
     rules = [];
     
     /**
-     * Konfiguracja walidacji pola w kontekście formularza
+     * Configuration of field validation in the context of the form
      *
-     * @param {Object} [arguments] - role validacji zdefiniowane obiektami klas ról
+     * @param {Object} [arguments] - validation roles defined by role class objects
      */
     constructor() {
-        // console.log('arguments', arguments);
-        
-        //należy uwzględnić dowolną iloś argumentów/ról
+        //należy uwzględnić dowolną ilość argumentów/ról
         for (let rule of arguments) {
             this.rules.push(rule);
         }

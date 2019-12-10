@@ -21,9 +21,7 @@ export default class CollectionValidationConfig {
      * @see CollectionUniqueRule
      */
     constructor() {
-        // console.log('arguments', arguments);
-        
-        //należy uwzględnić dowolną iloś argumentów/ról
+        // any number of arguments / roles should be included
         for (let rule of arguments) {
             this.rules.push(rule);
         }
